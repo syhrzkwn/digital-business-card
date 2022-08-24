@@ -1,0 +1,166 @@
+html {
+  font-family: 'Roboto Mono', sans-serif;
+  background-color: #3c4043;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  flex: 1 0 auto;
+}
+
+@media screen and (min-width: 400px) {
+  .main-container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .main-container {
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+  will-change: filter;
+}
+
+.logo:hover {
+  transition: .2s;
+  filter: drop-shadow(0 0 2em #6e57e0);
+}
+
+.info-container {
+  text-align: center;
+  padding: 2rem 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.info-title {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 400;
+  margin: .5rem 0;
+  white-space: nowrap;
+}
+
+.info-subtitle {
+  font-weight: 500;
+  margin-top: 0;
+  color: #6e57e0;
+}
+
+.info-link {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.icon {
+  margin-right: .5rem;
+}
+
+.btn-group {
+  margin-top: 2.5rem;
+}
+
+.btn {
+  border-radius: .5rem;
+  margin: 0 .5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.btn-light {
+  background-color: #fff;
+  color: black;
+  will-change: filter;
+}
+
+.btn-light:hover {
+  background-color: #e6e6e6;
+  color: black;
+  filter: drop-shadow(0 0 2em #696969);
+}
+
+.btn-primary {
+  background-color: #6e57e0;
+  color: white;
+  will-change: filter;
+}
+
+.btn-primary:hover {
+  background-color: #5d48c9;
+  color: white;
+  filter: drop-shadow(0 0 2em #6e57e0);
+}
+
+.about-container, .skills-container {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-title {
+  font-family: 'Silkscreen', sans-serif;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+
+.about-content {
+  margin-top: 0;
+  color: #DCDCDC;
+}
+
+.skills-link {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  background: #6e57e0;
+  padding: 20px 0;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  flex-shrink: 0;
+}
+
+.footer-social {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.footer-icon {
+  background-color: #6e57e0;
+  border-radius: 50%;
+  margin: 0 1rem;
+  padding: 10px 13px;
+  color: #fff;
+  font-size: 20px;
+  will-change: filter;
+}
+
+.footer-icon:hover {
+  transition: .2s;
+  background-color: #5d48c9;
+  filter: drop-shadow(0 0 2em #6e57e0);
+}
